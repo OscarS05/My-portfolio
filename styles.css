@@ -1,0 +1,133 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+
+/* Header */
+header {
+    background-color: #1f1f1f;
+    padding: 10px 50px;
+}
+#logo {
+    width: 50px;
+}
+#logo img {
+    border-radius: 100%;
+    border: 2px solid #fff;
+}
+
+
+/* Image container */
+
+.image-container {
+    display: flex;
+}
+.image-container img {
+    width: 100%;
+}
+
+
+/* hero */
+#hero {
+    position: relative;
+}
+#hero #computadora {
+    display: inline-block;
+    width: 100%;
+}
+#hero .informacion-contenedor {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    color: #fff;
+    padding: 0 50px;
+    display: flex;
+}
+#hero .informacion-contenedor #foto {
+    width: 200px;
+}
+#hero .informacion-contenedor #foto img {
+    border-radius: 100%;
+}
+#hero .informacion-contenedor .informacion {
+    margin-left: 20px;
+    font-weight: bold;
+    width: calc(100% - 200px);
+}   
+#hero .informacion-contenedor .informacion h1{
+    margin-top: 30px;
+}
+#hero .informacion-contenedor .informacion span{
+    display: inline-block;
+    color: #b5b5b5;
+    margin-bottom: 70px;
+}
+
+
+/* Main */
+main {
+    padding: 100px;
+}
+main .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+main .social-icons li {
+    list-style: none;
+}
+main .social-icons .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    border-radius: 5px;
+    width: 50px;
+}
+main .social-icons .social-icon img {
+    width: 100%;
+}
+
+
+@media (max-width: 535px){
+    #hero .informacion-contenedor {
+        padding: 0 5px;
+    }
+    #hero .informacion-contenedor .informacion span {
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 404px){
+    main {
+        padding: 30px;
+    }
+    header {
+        padding-left: 20px;
+    }
+    #hero .informacion-contenedor {
+        padding: 0;
+    }
+    #hero .informacion-contenedor #foto {
+        width: 150px;
+        height: 150px;
+        margin: 5px 0 5px 5px;
+    }
+    #hero .informacion-contenedor .informacion {
+        margin-left: 4px;
+    }
+    #hero .informacion-contenedor .informacion h1 {
+        margin-top: 0;
+    }
+    #hero .informacion-contenedor .informacion span {
+        margin-bottom: 10px;
+    }
+}
