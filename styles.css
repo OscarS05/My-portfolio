@@ -69,12 +69,17 @@ header {
     display: inline-block;
     color: #b5b5b5;
     margin-bottom: 70px;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 
 /* Main */
 main {
     padding: 100px;
+}
+main > p:nth-child(1) {
+    margin-bottom: 90px;
 }
 main .social-icons {
     display: flex;
@@ -109,6 +114,7 @@ main .social-icons .social-icon img {
 @media (max-width: 404px){
     main {
         padding: 30px;
+        padding-top: 60px;
     }
     header {
         padding-left: 20px;
@@ -129,5 +135,10 @@ main .social-icons .social-icon img {
     }
     #hero .informacion-contenedor .informacion span {
         margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    body {
+        overflow-x: hidden;
     }
 }
